@@ -1,5 +1,6 @@
 
-large_value_stored = 0;
+let large_value_stored = 0
+
 
 function next() {
 	//Get value from the inputs
@@ -18,9 +19,9 @@ function next() {
 function calculate() {
 	//Get value from the inputs
 	let small = document.getElementById("small").value
-
+	console.log(large_value_stored, small)
 	//Check to see if inputs have errors
-	if (large_value_stored === 0 || small === 0) {
+	if (large_value_stored ==  "" || small == "") {
 		document.getElementById("error_container").style.display = "flex"
 		document.getElementById("error").innerHTML = "You need to fill in all fields!"
 		document.getElementById("result").innerHTML = ""
